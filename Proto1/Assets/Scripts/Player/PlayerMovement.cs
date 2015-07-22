@@ -13,7 +13,33 @@ public class PlayerMovement : MonoBehaviour {
 		float speed = 5f;
 	}
 
-	void Update () {
-	
+	void FixedUpdate () {
+
+		getInput("RTSmouse");
+
+		turn();
+		move();
 	}
+
+	void getInput(string controlScheme){
+		switch (controlScheme) {
+		case "RTSmouse":
+			break;
+		case "RTSkey":
+			break;
+		case "RTSmousekey":
+			break;
+		case "thirdperson":
+			break;
+		}
+	}
+
+	void turn(){
+			
+	}
+
+	void move(){
+
+	}
+
 }
