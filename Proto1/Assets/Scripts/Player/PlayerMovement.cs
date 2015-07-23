@@ -17,13 +17,16 @@ public class PlayerMovement : MonoBehaviour {
 
 		getInput("RTSmouse");
 
-		turn();
-		move();
+		move(direction);
 	}
 
 	void getInput(string controlScheme){
 		switch (controlScheme) {
 		case "RTSmouse":
+			if(Input.GetMouseButtonDown(1)){
+				direction.x = Input.mousePosition.x - gameObject.transform.position.x;
+				direction.z = Input.mousePosition.z - gameObject.transform.position.z;
+			}
 			break;
 		case "RTSkey":
 			break;
@@ -34,11 +37,7 @@ public class PlayerMovement : MonoBehaviour {
 		}
 	}
 
-	void turn(){
-			
-	}
-
-	void move(){
+	void move(Vector3 destination){
 
 	}
 
