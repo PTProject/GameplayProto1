@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour {
 				rb.velocity = velocity;
 			}
 			if(destination.HasValue) {
-				bool pointReached = rb.moveTo(destination.Value);
+				bool pointReached = rb.moveTo(destination.Value, speed);
 				if(pointReached) destination = null;
 			}
 			break;
@@ -61,17 +61,18 @@ public class PlayerMovement : MonoBehaviour {
 
 public static class rbHelper {
 
-	static float lastSqrMag = 0;
+	static float lastSqrMag = Mathf.Infinity;
 
-	public static bool moveTo(this Rigidbody rb, Vector3 to){
+	public static bool moveTo(this Rigidbody rb, Vector3 to, float speed){
 		Vector3 distance = to - rb.position;
 		float sqrMag = distance.sqrMagnitude;
-		if (sqrMag < lastSqrMag) {
-			rb.MovePosition(to);
-			lastSqrMag = 0;
+		if (sqrMag < speed * Time.deltaTime) {
+//			rb.MovePosition(to);
+			lastSqrMag = Mathf.Infinity;
 			return true;
 		} else {
 			rb.MovePosition (rb.velocity + rb.position);
+			Debug.Log (rb.velocity);
 		}
 		lastSqrMag = sqrMag;
 		return false;
