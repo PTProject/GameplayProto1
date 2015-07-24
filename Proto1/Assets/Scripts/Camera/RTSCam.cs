@@ -4,11 +4,17 @@ using System.Collections;
 public class RTSCam : MonoBehaviour {
 
 	public Transform target;
-	public float smoothing = 6f;
+	public float smoothing = 10f;
 
 	Vector3 offset;
 
 	void Start () {
+		transform.position = target.position;
+		transform.position = new Vector3(transform.position.x - 6,
+		                                 transform.position.y + 8,
+		                                 transform.position.z - 6);
+
+		transform.LookAt (target.position);
 		offset = transform.position - target.position;
 
 	}
@@ -18,6 +24,5 @@ public class RTSCam : MonoBehaviour {
 
 		transform.position = Vector3.Lerp (transform.position, newCamPos,
 		                                   smoothing * Time.deltaTime);
-
 	}
 }

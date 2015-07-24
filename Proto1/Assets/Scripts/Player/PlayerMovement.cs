@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	void FixedUpdate () {
 		getInput("RTSmouse");
-
+		Debug.Log (rb.velocity.sqrMagnitude);
 	}
 
 	void getInput(string controlScheme){
@@ -29,12 +29,14 @@ public class PlayerMovement : MonoBehaviour {
 			if(Input.GetMouseButtonDown(1)){
 				setVelocityFromCursor(Input.mousePosition);
 				velocity = velocity.normalized * speed * Time.deltaTime;
+//				Debug.Log(destination.Value);
 			}
 			if(destination.HasValue) {
 				//Debug.Log (velocity + " " + destination.Value);
 				bool pointReached = rb.moveTo(destination.Value, velocity, speed);
 				if(pointReached) {
 					destination = null;
+//					Debug.Log(rb.position);
 				}
 			}
 			break;
@@ -68,7 +70,7 @@ public static class rbHelper {
 	                          float speed){
 		Vector3 distance = to - rb.position;
 		float sqrMag = distance.sqrMagnitude;
-		Debug.Log (distance.sqrMagnitude + " " + velocity.sqrMagnitude + " " + lastSqrMag);
+//		Debug.Log (distance.sqrMagnitude + " " + velocity.sqrMagnitude + " " + lastSqrMag);
 		if (sqrMag < lastSqrMag || lastSqrMag == 0) {
 			rb.AddForce(velocity, ForceMode.VelocityChange);
 			lastSqrMag = sqrMag;
