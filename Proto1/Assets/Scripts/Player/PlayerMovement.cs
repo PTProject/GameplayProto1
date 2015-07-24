@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	void FixedUpdate () {
 		getInput("RTSmouse");
-		Debug.Log (rb.velocity.sqrMagnitude);
+//		Debug.Log (rb.velocity.sqrMagnitude);
 	}
 
 	void getInput(string controlScheme){

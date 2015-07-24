@@ -10,9 +10,9 @@ public class RTSCam : MonoBehaviour {
 
 	void Start () {
 		transform.position = target.position;
-		transform.position = new Vector3(transform.position.x - 6,
+		transform.position = new Vector3(transform.position.x - 4,
 		                                 transform.position.y + 8,
-		                                 transform.position.z - 6);
+		                                 transform.position.z - 4);
 
 		transform.LookAt (target.position);
 		offset = transform.position - target.position;
