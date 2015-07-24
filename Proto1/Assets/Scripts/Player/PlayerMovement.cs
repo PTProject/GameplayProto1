@@ -30,11 +30,15 @@ public class PlayerMovement : MonoBehaviour {
 			if(Input.GetMouseButtonDown(1)){
 				setVelocityFromCursor(Input.mousePosition);
 				velocity = velocity.normalized * speed * Time.deltaTime;
-				rb.velocity = velocity;
+				Debug.Log (velocity.x + " " + velocity.z);
 			}
 			if(destination.HasValue) {
-				bool pointReached = rb.moveTo(destination.Value, speed);
-				if(pointReached) destination = null;
+				//Debug.Log (velocity + " " + destination.Value);
+				bool pointReached = rb.moveTo(destination.Value, velocity, speed);
+				if(pointReached) {
+					destination = null;
+					Debug.Log ("reached");
+				}
 			}
 			break;
 		case "RTSkey":
@@ -53,28 +57,25 @@ public class PlayerMovement : MonoBehaviour {
 
 		if (Physics.Raycast (camRay, out ground, rayLength, mapMask)) {
 			destination = ground.point;
-			velocity = destination.Value - transform.position;
-			velocity.y = 0.5f;
+			velocity = destination.Value - rb.position;
+			Debug.Log(velocity + " " + velocity.normalized + " " + (speed * Time.deltaTime));
 		}
 	}
 }
 
 public static class rbHelper {
+	
 
-	static float lastSqrMag = Mathf.Infinity;
-
-	public static bool moveTo(this Rigidbody rb, Vector3 to, float speed){
+	public static bool moveTo(this Rigidbody rb, Vector3 to, Vector3 velocity,
+	                          float speed){
 		Vector3 distance = to - rb.position;
 		float sqrMag = distance.sqrMagnitude;
-		if (sqrMag < speed * Time.deltaTime) {
-//			rb.MovePosition(to);
-			lastSqrMag = Mathf.Infinity;
+		if (sqrMag < velocity.sqrMagnitude) {
+			rb.MovePosition (to);
 			return true;
 		} else {
-			rb.MovePosition (rb.velocity + rb.position);
-			Debug.Log (rb.velocity);
+			rb.MovePosition (velocity + rb.position);
 		}
-		lastSqrMag = sqrMag;
 		return false;
 	}
 }
