@@ -1,9 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Camera\RTSCam.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FengShui\FSObject.cs">
     <Files>
-      <File FileName="Assets\Scripts\Player\PlayerMovement.cs" Line="22" Column="24" />
-      <File FileName="Assets\Scripts\Camera\RTSCam.cs" Line="27" Column="3" />
+      <File FileName="Assets\Scripts\FengShui\FengShui.cs" Line="16" Column="2" />
+      <File FileName="Assets\Scripts\FengShui\FSObject.cs" Line="4" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
