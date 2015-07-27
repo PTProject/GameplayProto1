@@ -7,12 +7,10 @@ public class FengShui : MonoBehaviour{
 	protected float ying;
 	protected float yang;
 	protected Color color;
-	protected bool smooth;
+	protected float flowSpeed;
 	protected fs_element element;
 
 	void Start () {
-		ying = 0;
-		yang = 0;
 	}
 
 	void Update () {
