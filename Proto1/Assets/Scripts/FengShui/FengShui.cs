@@ -3,8 +3,11 @@ using System.Collections;
 
 public class FengShui : MonoBehaviour{
 
+	public enum fs_element {Fire, Earth, Metal, Water, Wood};
 	protected float ying;
 	protected float yang;
+	protected Color color;
+	protected bool smooth;
 	protected fs_element element;
 
 	void Start () {
@@ -28,5 +31,3 @@ public class FengShui : MonoBehaviour{
 		return element;
 	}
 }
-
-public enum fs_element {Fire, Earth, Metal, Water, Wood};
