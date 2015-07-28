@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FSSystem : MonoBehaviour {
-	
+public class FSHomeEffect : MonoBehaviour {
+
+	FSHome system;
+
 	void Start () {
 	
 	}

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FengShui : MonoBehaviour{
+public abstract class FengShui : MonoBehaviour{
 
 	public enum fs_element {Fire, Earth, Metal, Water, Wood};
 	protected float ying;
@@ -10,10 +10,10 @@ public class FengShui : MonoBehaviour{
 	protected float flowSpeed;
 	protected fs_element element;
 
-	void Start () {
+	protected virtual void Start () {
 	}
 
-	void Update () {
+	protected virtual void Update () {
 	
 	}
 

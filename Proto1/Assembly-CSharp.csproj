@@ -47,10 +47,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Camera\RTSCam.cs" />
-     <Compile Include="Assets\Scripts\Items\FengShui\FSEffect.cs" />
-     <Compile Include="Assets\Scripts\Items\FengShui\FSSystem.cs" />
-     <Compile Include="Assets\Scripts\Items\FengShui\FengShui.cs" />
-     <Compile Include="Assets\Scripts\Items\Item.cs" />
+     <Compile Include="Assets\Scripts\FengShui\FSHome.cs" />
+     <Compile Include="Assets\Scripts\FengShui\FSHomeEffect.cs" />
+     <Compile Include="Assets\Scripts\FengShui\FengShui.cs" />
+     <Compile Include="Assets\Scripts\FengShui\Items\Item.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

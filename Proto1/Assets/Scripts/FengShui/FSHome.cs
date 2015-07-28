@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FSEffect : MonoBehaviour {
-
-
+public class FSHome : FengShui {
+	
 	void Start () {
 	
 	}
