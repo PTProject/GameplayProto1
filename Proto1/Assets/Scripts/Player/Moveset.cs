@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Moveset : MonoBehaviour {
+public class Moveset : Player {
 
 	void Start () {
 	
@@ -10,4 +10,26 @@ public class Moveset : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	void readInput () {
+
+	}
+
+	void loot (GameObject item) {
+
+	}
+
+	void drop () {
+		
+	}
+
+	void kick () {
+
+	}
+
+	void pitch () {
+
+	}
+
+
 }
