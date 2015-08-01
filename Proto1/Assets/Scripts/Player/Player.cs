@@ -40,7 +40,7 @@ public class Player : MonoBehaviour {
 			if(Input.GetMouseButtonDown(1)){
 				RTSmouseMovement(Input.mousePosition);
 				velocity = velocity.normalized * speed * Time.deltaTime;
-				//				Debug.Log(destination.Value);
+				//Debug.Log(destination.Value);
 			}
 			if(destination.HasValue) {
 				//Debug.Log (velocity + " " + destination.Value);
@@ -81,6 +81,10 @@ public class Player : MonoBehaviour {
 	
 	void loot (Item item) {
 		inventory.add (item);
+	}
+
+	void cycleItem () {
+
 	}
 	
 	void drop () {

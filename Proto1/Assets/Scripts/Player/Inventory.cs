@@ -5,9 +5,11 @@ using System.Collections.Generic;
 public class Inventory {
 
 	List<Item> items;
+	readonly int iterator;
 
 	public Inventory () {
 		items = new List<Item> ();
+		iterator = 0;
 
 	}
 
@@ -20,4 +22,10 @@ public class Inventory {
 		item.gameObject.SetActive (true);
 		items.Remove (item);
 	}
+
+	public void cycleNext () {
+
+	}
+
+	public void cycleBack () {
 }
