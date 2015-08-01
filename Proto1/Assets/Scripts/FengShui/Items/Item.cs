@@ -5,9 +5,7 @@ public abstract class Item : FengShui {
 
 	protected FSHome home;
 
-	protected virtual void Start () {
-		
-	}
+	protected override abstract void Start ();
 
 	protected virtual void setInitValues() {}
 

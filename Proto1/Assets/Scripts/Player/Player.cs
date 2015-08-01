@@ -47,7 +47,7 @@ public class Player : MonoBehaviour {
 				bool pointReached = rb.moveTo(destination.Value, velocity, speed);
 				if(pointReached) {
 					destination = null;
-					//					Debug.Log(rb.position);
+					//Debug.Log(rb.position);
 				}
 			}
 			break;
@@ -95,13 +95,13 @@ public class Player : MonoBehaviour {
 		
 	}
 
-	void OnTriEnter(Collider other) {
+	void OnTriggerEnter(Collider other) {
 		if (other.tag == "Loot") {
 			Item item = other.GetComponent<Item>();
 			if(isLooting){
-				item.gameObject.SetActive(false);
 				loot (item);
 				isLooting = false;
+				item.gameObject.SetActive(false);
 			}
 		}
 	}

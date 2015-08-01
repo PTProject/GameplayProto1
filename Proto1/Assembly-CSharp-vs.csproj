@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\FengShui\FSHomeEffect.cs" />
      <Compile Include="Assets\Scripts\FengShui\FengShui.cs" />
      <Compile Include="Assets\Scripts\FengShui\Items\Item.cs" />
+     <Compile Include="Assets\Scripts\FengShui\Items\TestCube.cs" />
      <Compile Include="Assets\Scripts\Player\Inventory.cs" />
      <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\Util\Extensions.cs" />
