@@ -1,9 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-abstract class Item : FengShui {
+public abstract class Item : FengShui {
 
 	protected FSHome home;
+
+	protected virtual void Start () {
+		
+	}
 
 	protected virtual void setInitValues() {}
 
@@ -12,4 +16,7 @@ abstract class Item : FengShui {
 	public virtual void deploy() {}
 
 	public virtual void HomeEffect() {}
+
+
+	
 }
