@@ -28,4 +28,6 @@ public class Inventory {
 	}
 
 	public void cycleBack () {
+
+	}
 }
