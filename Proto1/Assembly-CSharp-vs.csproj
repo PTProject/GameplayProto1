@@ -50,6 +50,11 @@
      <Compile Include="Assets\Scripts\FengShui\FSHome.cs" />
      <Compile Include="Assets\Scripts\FengShui\FSHomeEffect.cs" />
      <Compile Include="Assets\Scripts\FengShui\FengShui.cs" />
+     <Compile Include="Assets\Scripts\FengShui\Items\Environmental\DeerScare.cs" />
+     <Compile Include="Assets\Scripts\FengShui\Items\Environmental\Lamp.cs" />
+     <Compile Include="Assets\Scripts\FengShui\Items\Environmental\Plant.cs" />
+     <Compile Include="Assets\Scripts\FengShui\Items\Environmental\Pond.cs" />
+     <Compile Include="Assets\Scripts\FengShui\Items\Environmental\Windchime.cs" />
      <Compile Include="Assets\Scripts\FengShui\Items\ILootable.cs" />
      <Compile Include="Assets\Scripts\FengShui\Items\Item.cs" />
      <Compile Include="Assets\Scripts\FengShui\Items\TestCube.cs" />
