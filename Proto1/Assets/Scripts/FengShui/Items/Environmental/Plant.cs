@@ -4,7 +4,7 @@ using System.Collections;
 public class Plant : MonoBehaviour {
 
 	// Use this for initialization
-	void Start () {
+	protected override void Start () {
 	
 	}
 	

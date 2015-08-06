@@ -3,7 +3,7 @@ using System.Collections;
 
 public class DeerScare : Item {
 
-	void Start () {
+	protected override void Start () {
 		yin = 25;
 		yang = 5;
 		flowSpeed = 4f;

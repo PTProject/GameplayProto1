@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Lamp : Item {
 
-	void Start () {
+	protected override void Start () {
 		yin = 30;
 		yang = 0;
 		flowSpeed = 1.5f;
