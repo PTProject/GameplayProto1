@@ -1,11 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Lamp : MonoBehaviour {
+public class Lamp : Item {
 
-	// Use this for initialization
 	void Start () {
-	
+		yin = 30;
+		yang = 0;
+		flowSpeed = 1.5f;
+				
+		element = fs_element.Earth;
+
 	}
 	
 	// Update is called once per frame
