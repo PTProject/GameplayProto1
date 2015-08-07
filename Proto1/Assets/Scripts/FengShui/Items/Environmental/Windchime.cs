@@ -1,14 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NewBehaviourScript : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
+public class WindChime : Item {
 	
+	protected override void Start () {
+		yin = 54;
+		yang = 10;
+		flowSpeed = 8f;
+		
+		element = fs_element.Metal;
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 	
 	}
