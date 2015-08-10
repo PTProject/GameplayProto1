@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public abstract class Item : FengShui {
 
 	protected FSHome home;
+	protected List<Item> Connection;
 
 	protected override abstract void Start ();
 
