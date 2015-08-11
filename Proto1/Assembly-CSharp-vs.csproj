@@ -47,7 +47,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Camera\RTSCam.cs" />
-     <Compile Include="Assets\Scripts\FengShui\FSBiome.cs" />
+     <Compile Include="Assets\Scripts\FengShui\Biomes\FSBiome.cs" />
+     <Compile Include="Assets\Scripts\FengShui\Biomes\Plain.cs" />
      <Compile Include="Assets\Scripts\FengShui\FSHome.cs" />
      <Compile Include="Assets\Scripts\FengShui\FSHomeEffect.cs" />
      <Compile Include="Assets\Scripts\FengShui\FengShui.cs" />
