@@ -1,15 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Plain : MonoBehaviour {
+public class Plain : FSBiome {
 
-	// Use this for initialization
-	void Start () {
-	
+	protected override void Start () {
+		yin = 120f;
+		yang = 150f;
+		color = Color.green;
+		flowSpeed = 80f;
+		element = fs_element.Earth;
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+	protected void Update () {
 	
 	}
 }
