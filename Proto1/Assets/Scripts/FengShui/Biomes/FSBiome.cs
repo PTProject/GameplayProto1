@@ -7,8 +7,8 @@ public class FSBiome : FengShui {
 	float major;
 	float minor;
 
-	void Start () {
-	
+	protected override void Start () {
+		base.Start ();
 	}
 
 	void Update () {

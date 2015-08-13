@@ -9,8 +9,10 @@ public abstract class FengShui : MonoBehaviour{
 	protected Color color;
 	protected float flowSpeed;
 	protected fs_element element;
+	protected SphereCollider FSradius;
 
-	protected virtual void Start () {
+	protected virtual void Start (){
+		FSradius = new SphereCollider ();
 	}
 
 	protected virtual void Update () {
