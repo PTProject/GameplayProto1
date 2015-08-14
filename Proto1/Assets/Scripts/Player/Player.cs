@@ -99,7 +99,7 @@ public class Player : MonoBehaviour {
 		
 	}
 
-	void OnTriggerEnter(Collider other) {
+	protected virtual void OnTriggerEnter(Collider other) {
 		if (other.tag == "Loot") {
 			Item item = other.GetComponent<Item>();
 			if(isLooting){

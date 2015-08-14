@@ -10,13 +10,15 @@ public abstract class FengShui : MonoBehaviour{
 	protected float flowSpeed;
 	protected fs_element element;
 	protected SphereCollider FSradius;
+	Rigidbody rb;
 
 	protected virtual void Start (){
 		FSradius = new SphereCollider ();
+		rb = this.gameObject.AddComponent<Rigidbody> ();
 	}
 
 	protected virtual void Update () {
-	
+
 	}
 
 	public float YinValue(){
@@ -29,5 +31,13 @@ public abstract class FengShui : MonoBehaviour{
 
 	public fs_element Element(){
 		return element;
+	}
+
+	protected virtual void OnTriggerEnter() {
+
+	}
+
+	protected virtual void OnTriggerStay() {
+
 	}
 }
