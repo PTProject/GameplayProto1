@@ -11,4 +11,8 @@ public class FSHome : FengShui {
 	protected override void Update () {
 	
 	}
+
+	void add (Item item){
+
+	}
 }

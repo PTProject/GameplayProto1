@@ -14,4 +14,8 @@ public class FSBiome : FengShui {
 	void Update () {
 	
 	}
+
+	void add (FSHome home) {
+
+	}
 }
