@@ -18,13 +18,13 @@ public class FSBiome : FengShui {
 	
 	}
 
-	void add (Item item) {
+	protected virtual void add (Item item) {
 		if (Homes.Count == 0) {
 
 		}
 	}
 
-	void add (FSHome home) {
+	protected virtual void add (FSHome home) {
 
 	}
 }
