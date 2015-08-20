@@ -21,9 +21,9 @@ public class FSBiome : FengShui {
 
 	protected virtual void add (Item item) {
 		if (Homes.Count == 0) {
-			Homes.Add(Instantiate(Resources.Load("Home") as GameObject,
+			Homes.Add(Instantiate(Resources.Load("Home"),
 			          item.gameObject.transform.position,
-			          Quaternion.identity));
+			          Quaternion.identity) as GameObject);
 		}
 	}
 
