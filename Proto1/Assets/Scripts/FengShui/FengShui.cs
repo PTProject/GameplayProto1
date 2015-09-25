@@ -10,11 +10,11 @@ public abstract class FengShui : MonoBehaviour{
 	protected float flowSpeed;
 	protected fs_element element;
 	protected SphereCollider FSradius;
-	Rigidbody rb;
+//	Rigidbody rb;
 
 	protected virtual void Start (){
 		FSradius = new SphereCollider ();
-		rb = this.gameObject.AddComponent<Rigidbody> ();
+		//rb = this.gameObject.AddComponent<Rigidbody> ();
 	}
 
 	protected virtual void Update () {

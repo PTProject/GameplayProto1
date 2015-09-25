@@ -101,8 +101,8 @@ public class Player : MonoBehaviour {
 
 	protected virtual void OnTriggerEnter(Collider other) {
 		if (other.tag == "Loot") {
-			Item item = other.GetComponent<Item>();
 			if(isLooting){
+				Item item = other.GetComponent<Item>();
 				loot (item);
 				isLooting = false;
 				item.gameObject.SetActive(false);

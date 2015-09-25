@@ -1,18 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DeerScare : Item {
-
+public class Plant : Item {
+	
 	protected override void Start () {
-		yin = 25;
-		yang = 5;
-		flowSpeed = 4f;
-				
+		base.Start ();
+		yin = 0; 
+		yang = 50;
+		flowSpeed = 25f;
+
 		element = fs_element.Wood;
 
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 	
 	}

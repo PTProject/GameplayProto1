@@ -4,6 +4,7 @@ using System.Collections;
 public class Pond : Item {
 	
 	protected override void Start () {
+		base.Start ();
 		yin = 40f; 
 		yang = 5f;
 		flowSpeed = 10f;
@@ -12,6 +13,6 @@ public class Pond : Item {
 	}
 
 	void Update () {
-	
+		
 	}
 }
