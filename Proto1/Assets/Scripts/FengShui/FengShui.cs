@@ -14,6 +14,7 @@ public abstract class FengShui : MonoBehaviour{
 
 	protected virtual void Start (){
 		FSradius = new SphereCollider ();
+		FSradius.isTrigger = true;
 		//rb = this.gameObject.AddComponent<Rigidbody> ();
 	}
 

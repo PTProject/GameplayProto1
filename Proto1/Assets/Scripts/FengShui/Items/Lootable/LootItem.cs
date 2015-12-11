@@ -6,7 +6,7 @@ public class LootItem : Item {
 
 	protected override void Start () {
 		base.Start ();
+
 	}
 
 }
-
